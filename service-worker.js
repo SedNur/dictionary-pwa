@@ -1,4 +1,4 @@
-const CACHE_NAME = "sntg-pwa-v4";
+const CACHE_NAME = "sntg-pwa-v5";
 
 const FILES_TO_CACHE = [
     "./SNG_14050626.html",
