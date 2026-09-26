@@ -1,7 +1,7 @@
 const CACHE_NAME = "sntg-pwa-v7";
 
 const FILES_TO_CACHE = [
-    "./MoveGlossBtn_Claude.html",
+    "./AddDelMove_Claude_14050701.html",
     "./manifest.json",
     "./ArrowClock_48_PNG.ico",
     "./icon-192.png",
