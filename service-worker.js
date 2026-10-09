@@ -1,7 +1,7 @@
-const CACHE_NAME = "sntg-pwa-v7";
+const CACHE_NAME = "noorodict-pwa-v1";
 
 const FILES_TO_CACHE = [
-    "./AddDelMove_Claude_14050701.html",
+    "./index.html",
     "./manifest.json",
     "./ArrowClock_48_PNG.ico",
     "./icon-192.png",
