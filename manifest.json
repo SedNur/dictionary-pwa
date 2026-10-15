@@ -1,7 +1,7 @@
 {
   "name": "واژه‌نامهٔ انگلیسی–فارسی سدنور",
   "short_name": "فرهنگ لغات",
-  "start_url": "./index.html",
+  "start_url": "./index-pwa.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
