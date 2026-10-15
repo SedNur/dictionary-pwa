@@ -1,7 +1,7 @@
 const CACHE_NAME = "noorodict-pwa-v3";
 
 const FILES_TO_CACHE = [
-    "./index.html",
+    "./index-pwa.html",
     "./manifest.json",
     "./ArrowClock_48_PNG.ico",
     "./icon-192.png",
