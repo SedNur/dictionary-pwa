@@ -28,9 +28,46 @@ self.addEventListener("activate", event => {
     );
 });
 
+
 self.addEventListener("fetch", event => {
+
+    const request = event.request;
+
+    // فقط درخواست‌های GET و هم‌مبدأ
+    if (
+        request.method !== "GET" ||
+        new URL(request.url).origin !== self.location.origin
+    ) {
+        return;
+    }
+
     event.respondWith(
-        fetch(event.request)
-            .catch(() => caches.match(event.request))
+        (async () => {
+
+            // ابتدا Cache را بررسی کن
+            const cachedResponse = await caches.match(request);
+
+            if (cachedResponse) {
+                return cachedResponse;
+            }
+
+            // فقط اگر فایل در Cache نبود، به اینترنت مراجعه کن
+            try {
+                return await fetch(request);
+
+            } catch (error) {
+
+                // در صورت نبود اینترنت، صفحه اصلی را برگردان
+                if (request.mode === "navigate") {
+                    const appShell =
+                        await caches.match("./index-pwa.html");
+
+                    if (appShell) return appShell;
+                }
+
+                throw error;
+            }
+
+        })()
     );
 });
