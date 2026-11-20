@@ -1,11 +1,11 @@
 {
-  "name": "واژه‌نامهٔ انگلیسی–فارسی سدنور",
-  "short_name": "فرهنگ لغات",
+  "name": "واژه‌نامهٔ سدنور",
+  "short_name": "لغتنامه",
   "start_url": "./index-pwa.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#0E3651",
+  "theme_color": "#602F08",
   "icons": [
     {
       "src": "icon-192.png",
