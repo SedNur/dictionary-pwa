@@ -1,4 +1,4 @@
-const CACHE_NAME = "noorodict-v7";
+const CACHE_NAME = "noorodict-v7-1";
 const APP_SHELL = "./index-pwa.html";
 
 const FILES_TO_CACHE = [
